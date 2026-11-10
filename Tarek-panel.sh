@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 
-wget -O /tmp/Tarek-panel.tar.gz "https://raw.githubusercontent.com/tarekzoka/MY-STORE/raw/main/Tarek-panel.tar.gz.tar.gz"
+wget -O /tmp/Tarek-panel.tar.gz "https://raw.githubusercontent.com/tarekzoka/MY-STORE/raw/main/Tarek-panel.tar.gz"
 
 tar -xzf /tmp/*.tar.gz -C /
 
