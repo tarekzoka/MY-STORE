@@ -1,14 +1,19 @@
 #!/bin/sh
-#
-
-wget -O /tmp/Tarek-panel.tar.gz "https://raw.githubusercontent.com/tarekzoka/MY-STORE/refs/heads/main/Tarek-panel.tar.gz"
-
-tar -xzf /tmp/*.tar.gz -C /
-
-rm -r /tmp/Tarek-panel.tar.gz
-
-echo "         UPLOADED BY TARK_HANFY    "
-
+ # 
+ # # 
+cd /tmp
+set -e 
+wget "https://raw.githubusercontent.com/tarekzoka/MY-STORE/main/Tarek-panel.tar.gz"
+wait
+tar -xzf Tarek-panel.tar.gz  -C /
+wait
+cd ..
+set +e
+rm -f /tmp/Tarek-panel.tar.gz
+echo "   UPLOADED BY  >>>>   TAREKHANFY "   
+sleep 4;                                                                                                                  
+echo ". >>>>         RESTARING     <<<<"
+echo "**********************************************************************************"
+wait
 killall -9 enigma2
-
-sleep 2;
+exit 0
